@@ -1,0 +1,19 @@
+{
+    "name": "php-framework/php-framework",
+    "description": "This is a Tiny PHP Framework.",
+    "type": "project",
+    "require": {
+        "php": "^7.4"
+    },
+    "authors": [
+        {
+            "name": "Abdul Majid"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": ["./application.php"]
+    }
+}
