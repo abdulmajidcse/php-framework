@@ -12,7 +12,7 @@ trait App
     private $appDirectory = APP_ROOT . '/app';
 
     // Applicaton url
-    private $appUrl = 'http://localhost/php';
+    private $appUrl = 'http://php-framework.test';
 
     /**
      * Get app name
@@ -36,8 +36,8 @@ trait App
      * Get app directory
      * @return $string
      */
-    final public function appDirectory()
+    final public function appDirectory($path = '')
     {
-        return rtrim($this->appDirectory, '/');
+        return rtrim($this->appDirectory, '/')  . '/' . trim($path, '/');
     }
 }

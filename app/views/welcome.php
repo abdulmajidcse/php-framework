@@ -9,7 +9,7 @@
 <body>
     <div>
         <?php
-            var_dump($data);
+            // var_dump($data);
         ?>
         <h2>Welcome to New Application!</h2>
     </div>

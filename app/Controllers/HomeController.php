@@ -9,8 +9,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $users = (new Test())->init();
-        return $this->view('welcome', ['users' => $users]);
+        // $users = (new Test())->init();
+        // return $this->view('welcome', ['users' => $users]);
+        return $this->view('welcome');
     }
 
     public function about()
