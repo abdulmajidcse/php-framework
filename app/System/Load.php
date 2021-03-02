@@ -14,4 +14,9 @@ trait Load
         require_once $this->appDirectory() . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . \str_replace('.', DIRECTORY_SEPARATOR, $directory) . '.php';
         return $data;
     }
+
+    final public function include($directory, $data = [])
+    {
+        return $this->view($directory, $data);
+    }
 }
